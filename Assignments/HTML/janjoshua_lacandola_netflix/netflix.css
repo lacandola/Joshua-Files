@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    display: flex;
+    margin-left: 70px;
+    margin-right: 70px;
+    justify-content: space-between;
+}
+
+header select {
+    height: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 5px;
+    background-color: #141615;
+    opacity: 70%;
+    margin-top: 20px;
+
+}
+
+header img {
+    margin-top: 20px;
+}
+
+
+body {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    background-image: linear-gradient(rgb(0, 0, 0, 1), rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.9)), url(netflix_image_asset/PH-en-20250113-TRIFECTA-perspective_8171c01e-c334-403b-bfa2-133bcc962aaf_small.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header button {
+    background-color: #e50914;
+    color: white;
+    height: 30px;
+    width: 70px;
+    border: #e50914;
+    border-radius: 5px;
+}
+
+
+main h1 {
+    font-size: 60px;
+    margin-top: 200px;
+}
+
+main h4 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+main h5 {
+    font-size: 17px;
+    font-weight: light;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main input {
+    height: 60px;
+    width: 450px;
+    border-radius: 5px;
+    border-color: rgba(255, 255, 255, 0.304);
+    font-size: 25px;
+    background-color: #141615b7;
+}
+
+.m-button {
+    background-color: #e50914;
+    color: white;
+    height: 62px;
+    width: 200px;
+    border-color: #e50914;
+    border-radius: 5px;
+    font-size: 25px;
+    margin-bottom: 300px;
+}
+
+.grid {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.grid li img{
+    border-radius: 5px;
+}
+section h3 {
+    text-align: left;
+    margin-left: 180px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.grid-reasons {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 80px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.grid-reasons li {
+    background-color: #192247;
+    padding: 20px;
+    padding-top: 25px;
+    padding-bottom: 150px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.grid-reasons li h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin: 40px;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+footer input {
+    height: 40px;
+    width: 450px;
+    border-radius: 5px;
+    border-color: rgba(255, 255, 255, 0.304);
+    font-size: 15px;
+    background-color: #141615b7;
+}
+
+footer button {
+    background-color: #e50914;
+    color: white;
+    height: 42px;
+    width: 200px;
+    border-color: #e50914;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.align-footer {
+    display: flex;
+    gap: 5px;
+    justify-content: center;   
+}

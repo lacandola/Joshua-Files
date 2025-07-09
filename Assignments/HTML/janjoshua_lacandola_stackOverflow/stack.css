@@ -1,0 +1,437 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*  border: 1px solid #97a4b1; */
+}
+
+header {
+    border: 1px solid #d6d9dc;
+    border-top: 5px solid #e7700d;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 10px;
+    height: 50px;
+}
+
+header img {
+    height: 30px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header li {
+    display: flex;
+    border-radius: 50px;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+header li a {
+    text-decoration: none;
+    color: #717880;
+}
+
+header li:hover {
+    background-color: #939ba434;
+}
+
+header form {
+    display: flex;
+    align-items: center;
+}
+
+header form input {
+    height: 30px;
+    border-radius: 5px;
+    width: 700px;
+    border: solid 1px #939ba4;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header div button {
+    height: 32px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: solid 2px #1b75d0;
+}
+
+
+.button_login {
+    background-color: white;
+    color: #1b75d0;
+}
+
+.button_signup {
+    background-color: #1b75d0;
+    color: white;
+}
+
+aside {
+    color: #3b4045;
+    margin-left: 100px;
+    padding-top: 30px;
+    width: 200px;
+}
+
+aside a {
+    text-decoration: none;
+    color: #3b4045;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside li {
+    margin: 12px;
+    display: flex;
+    padding: 3px;
+    border-radius: 3px;
+
+}
+
+aside p {
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+aside img {
+    margin-right: 10px;
+}
+
+.users_companies_list {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.discussions {
+    margin: 12px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.discussions:hover {
+    background-color: #939ba434;
+}
+
+aside li:hover {
+    background-color: #939ba434;
+}
+
+.signup_banner {
+    background-color: #f9fafa;
+    margin: -412px 0px 50px 302px;
+    width: 1115px;
+    height: 350px;
+    position: relative;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.signup_banner img:first-child {
+    height: 300px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.signup_banner img:nth-of-type(2) {
+    position: absolute;
+    height: 40px;
+    width: 180px;
+    top: 65px;
+    left: 135px;
+    z-index: 0;
+}
+
+.signup_banner h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #2b2e31;
+    font-size: 35px;
+    margin-left: 40px;
+    margin-top: 50px;
+    padding-top: 60px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.signup_banner span {
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.signup_banner ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    width: 500px;
+    margin: 10px;
+    padding-top: 20px;
+    margin-left: 40px;
+    gap: 40px;
+    color: #2b2e31;
+    font-size: 18px;
+}
+
+.banner_signup_button {
+    background-color: #1b75d0;
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.signup_banner li a {
+    text-decoration: none;
+    font-size: small;
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 25px;
+    margin: 30px;
+    margin-left: 302px;
+    color: #3b4045;
+}
+
+.for_teams {
+    border: #939ba458 1px solid;
+    margin: 40px 0px 40px 302px;
+    width: 1115px;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.for_teams_logo {
+    height: 250px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.for_teams ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    width: 450px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.for_teams ul li img {
+    height: 100px;
+}
+
+.for_teams ul li {
+    margin-bottom: 20px;
+}
+
+.explore_teams_button {
+    background-color: #1b75d0;
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.overflow_ai {
+    background-color: #3b4045;
+    margin: 40px 0px 40px 302px;
+    width: 1115px;
+    height: 250px;
+    position: relative;
+    border-radius: 10px;
+    color: white;
+}
+
+.overflow_ai div {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    gap: 10px;
+    margin-left: 40px;
+    vertical-align: middle;
+}
+
+.overflow_ai div p {
+    font-size: 20px;
+    margin-top: 100px;
+
+}
+
+.overflow_ai div a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #e7700d;
+    color: white;
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.overflow_ai img:first-child {
+    height: 200px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.overflow_ai img:nth-of-type(2) {
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+
+.overflow_ai div {
+    margin-left: 40px;
+
+}
+
+.advertising {
+    border: #939ba458 1px solid;
+    height: 250px;
+    width: 535px;
+    margin: 0px 0px 40px 302px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.advertising img {
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.advertising_button {
+    background-color: #1b75d0;
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.advertising p {
+    margin-left: 40px;
+    margin-top: 110px;
+    margin-bottom: 10px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.advertising div {
+    margin-left: 40px;
+
+}
+
+.overflow_api {
+    border: #939ba458 1px solid;
+    height: 250px;
+    width: 535px;
+    margin: -291px 0px 50px 880px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.overflow_api img {
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.overflow_api_button {
+    background-color: #1b75d0;
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 40px;
+
+}
+
+.overflow_api p {
+    margin-left: 40px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 480px;
+    font-size: 20px;
+}
+
+.work_here {
+    border: #939ba458 1px solid;
+    margin: 40px 0px 40px 302px;
+    width: 1115px;
+    height: 250px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.work_here img:first-child {
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.work_here img:nth-of-type(2) {
+    height: 350px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.work_button {
+    background-color: #1b75d0;
+    color: white;
+    text-decoration: none;
+    padding: 9px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 40px;
+
+}
+
+.work_here p {
+    margin-left: 40px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 480px;
+    font-size: 20px;
+}

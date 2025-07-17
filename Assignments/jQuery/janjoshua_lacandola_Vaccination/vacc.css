@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://legends.pokemon.com/images/pages/story-world/characters/bg-your-character-xxl-2x.jpg);
+    background-size: 120%;
+    background-repeat: repeat;
+}
+
+.container {
+    margin-top: 10px;
+    height: 800px;
+    width: 1000px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.697);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#first_name, #last_name {
+    width: 40%;
+    height: 30px;
+    padding-left: 10px;
+}
+
+#datepicker {
+    height: 30px;
+    padding-left: 10px;
+
+}
+
+#submit-btn {
+    height: 30px;
+    width: 100px;
+    margin-top: 50px;
+    background-color: rgba(127, 170, 255, 0.333);
+    border-radius: 5px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    font-size: 50px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugins</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="loop-horizontal-scroller/css/mqscroller.min.css">
+    <script src="loop-horizontal-scroller/js/mqscroller.min.js"></script>
+
+    <link rel="stylesheet" href="plugins.css">
+    <link rel="stylesheet" href="responsive-header-dropdown-nav/style.css">
+    <script src="responsive-header-dropdown-nav/theme.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="responsive-tabs-serial/dist/jquery.serialtabs.css" />
+
+    <script src="responsive-tabs-serial/dist/jquery.serialtabs.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $('.mqscroller').mqScroller({
+                    htmlDir: 'ltr',
+                    loop: true,
+                    direction: 'right',
+                    duration: 70000,
+                    pauseOnHover: true,
+                    gap: 10
+                });
+                $('.serialtabs-nav').serialtabs();
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">JOSH CARS</div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+
+                <li><a href="#">About</a></li>
+
+                <li><a href="#">Team</a></li>
+
+                <li class="sub-menu"><a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Vehicle Maintenance</a></li>
+                        <li><a href="#">Car Customization</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu"><a href="#">Buy</a>
+                    <ul>
+                        <li><a href="#">New Cars</a></li>
+                        <li><a href="#">Used Cars</a></li>
+                        <li><a href="#">Financing Options</a></li>
+                        <li><a href="#">Trade-In Appraisal</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </header>
+
+    <div class="mqscroller">
+        <div class="mqs-item"><img
+                src="https://purepng.com/public/uploads/large/purepng.com-silver-land-rover-discovery-car-sidecarvehicletransportland-rover-961524658534ntle2.png"
+                alt="car 1"></div>
+        <div class="mqs-item"><img src="https://pngimg.com/d/mazda_PNG90.png" alt="car 2"></div>
+        <div class="mqs-item"><img src="https://www.freeiconspng.com/uploads/car-png-2.png" alt="car 3"></div>
+    </div>
+
+    <div class="container">
+        <div id="section-demonstration">
+            <h1>Experience Power, Style, and Precision</h1>
+            <ul class="serialtabs-nav">
+                <li><span class="sub-link-1" data-serialtabs="#tabs-nav-1">Performance</span></li>
+                <li><span class="sub-link-1" data-serialtabs="#tabs-nav-2">Design</span></li>
+                <li><span class="sub-link-1 is-current" data-serialtabs="#tabs-nav-3">Technology</span></li>
+                <li><span class="sub-link-1" data-serialtabs="#tabs-nav-4">Safety & Control</span></li>
+            </ul>
+            <div id="tabs-nav-1" class="serialtabs-nav-content">
+                <p>Unleash raw performance with engines built to thrill — from turbocharged efficiency to muscular
+                    horsepower that delivers serious acceleration. Whether you're cruising the highway or conquering
+                    city streets, our vehicles offer responsive handling and powerful drivetrains designed for dynamic
+                    driving.</p>
+            </div>
+            <div id="tabs-nav-2" class="serialtabs-nav-content">
+                <p>Bold lines, aerodynamic curves, and a presence that commands attention. Each model is sculpted with
+                    precision and crafted for elegance, featuring LED lighting, alloy wheels, and premium finishes that
+                    reflect your personal style.
+                </p>
+            </div>
+            <div id="tabs-nav-3" class="serialtabs-nav-content">
+                <p>Stay connected and in control with intuitive infotainment systems, seamless smartphone integration,
+                    and voice-activated features. Inside, enjoy the luxury of ergonomic seating, climate control, and
+                    ambient lighting — making every ride a premium experience.</p>
+            </div>
+            <div id="tabs-nav-4" class="serialtabs-nav-content">
+                <p>Drive with confidence thanks to a suite of intelligent safety systems, including lane-keeping assist,
+                    blind spot monitoring, adaptive cruise control, and emergency braking. Combined with superior
+                    traction and stability features, your safety is always a priority.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

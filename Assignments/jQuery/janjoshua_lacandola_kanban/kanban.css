@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-items: center;
+    background-image: url(https://legends.pokemon.com/images/pages/story-world/characters/bg-your-character-xxl-2x.jpg);
+    background-size: 100% 150%;
+    background-repeat: no-repeat;
+}
+
+
+#sortable1,
+#sortable2,
+#sortable3,
+#sortable4,
+#sortable5 {
+    border: 3px solid #1515431b;
+    border-radius: 10px;
+    background-color: #343b5438;
+    width: 250px;
+    min-height: 500px;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0px 0px 0px;
+    float: left;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sortable1 li,
+#sortable2 li,
+#sortable3 li,
+#sortable4 li,
+#sortable5 li {
+    margin: 3px 5px 5px 5px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    width: 210px;
+    position: relative;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.493);
+    color: rgb(255, 255, 255);
+}
+
+img {
+    height: 150%;
+    position: absolute;
+    right: 10px;
+    top: -10px;
+}
+
+#sortable1 li {
+    background: rgba(177, 125, 58, 0.679);
+    border-color: black;
+}
+
+#sortable2 li {
+    background: rgba(255, 188, 101, 0.718);
+    border-color: black;
+}
+
+#sortable3 li {
+    background: rgb(206, 172, 0);
+    border-color: rgba(0, 0, 0, 0.559);
+}
+
+#sortable4 li {
+    background: rgba(203, 203, 203, 0.559);
+    border-color: black;
+}
+
+#sortable5 li {
+    background: rgba(37, 183, 0, 0.559);
+    border-color: black;
+}
+
+
+h2 {
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.525);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    -webkit-text-stroke: 5px rgb(0, 73, 209);
+    margin: 100px 0 0 0;
+    color: rgb(255, 221, 0);
+    border-radius: 10px;
+    font-size: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

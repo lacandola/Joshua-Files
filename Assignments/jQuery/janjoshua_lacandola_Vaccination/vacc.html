@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination Form</title>
+    <link rel="stylesheet" href="vacc.css">
+    <link rel="stylesheet" href=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $('form').submit(function () {
+                    if ($('#first_name').val() === '') {
+                        alert('Please enter your first name.');
+                    } else if ($('#last_name').val() === '') {
+                        alert('Please enter your last name.');
+                    } else if ($('#datepicker').val() === '') {
+                        alert('Please select a preferred date.');
+                    } else {
+                        alert('Success!\n' +
+                            $('#first_name').val() + ' ' + $('#last_name').val() + '! \n' + 'Your vaccination is reserved on ' +
+                            'Date: ' + $('#datepicker').val());
+                    }
+
+                    return false;
+                });
+                $("#datepicker").datepicker({
+                    changeMonth: true,
+                    changeYear: true
+                });
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Scheduling Form for Vaccination</h1>
+        <form id="form1" action="#" method="post">
+            <label for="name">First name
+                <input type="text" name="first_name" id="first_name">
+            </label>
+            <label for="name">Last name
+                <input type="text" name="last_name" id="last_name">
+            </label>
+            <label> Preferred Date:
+                <input type="text" id="datepicker">
+            </label>
+            <label">
+                <input type="submit" name="submit!" id="submit-btn"></label>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

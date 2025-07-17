@@ -1,0 +1,315 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: inter;
+}
+
+header {
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header .logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 10%;
+}
+
+header a {
+    text-decoration: none;
+    color: #253858;
+}
+
+.get-for-free {
+    color: white;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: #0065FF;
+}
+
+.email-signup {
+    height: 780px;
+    background-color: #F4F4F6;
+    position: relative;
+    align-content: center;
+}
+
+.email-signup img {
+    height: 90%;
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+
+}
+
+.email-signup h1 {
+    font-size: 300%;
+    font-family: inter;
+    font-weight: 600;
+}
+
+.email-signup h4 {
+    font-size: 130%;
+    font-weight: 400;
+}
+
+.email-signup form input,
+button {
+    font-size: 15px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.email-signup form input {
+    width: 50%;
+    margin-right: 10px;
+    border: 1px solid #2538584a;
+}
+
+.email-signup form button {
+    width: 30%;
+    background-color: #0065FF;
+    border: none;
+    color: white;
+}
+
+.email-signup p {
+    font-size: 80%;
+}
+
+.beside-signup-hero {
+    width: 38%;
+    height: 45%;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.message-to-action {
+    color: white;
+    background-color: #0065FF;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.message-to-action h1 {
+    font-size: 30px;
+}
+
+.message-to-action h5 {
+    font-weight: 500;
+    margin-top: 15px;
+    font-size: 20px;
+    width: 750px;
+    text-align: center;
+
+}
+
+.email-magic {
+    background-color: white;
+    height: 350px;
+    width: 1200px;
+    border-radius: 10px;
+    padding: 50px;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-magic img {
+    height: 120%;
+}
+
+.email-magic-description {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.email-magic-description h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.work-smarter {
+    background-color: #FFFFFF;
+    height: 600px;
+    padding-left: 160px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    width: 1350px;
+    justify-content: center;
+
+
+}
+
+.work-smarter p {
+    width: 500px;
+    margin-top: 20px;
+}
+
+.work-smarter h5 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.work-smarter h1 {
+    font-weight: 600;
+}
+
+.work-smarter ul {}
+
+.work-smarter-grid {
+    padding-top: 25px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-smarter-cards {
+    flex-direction: column;
+    background-color: #f1f2f36a;
+    border-radius: 5px;
+    height: 390px;
+    padding: 20px;
+    list-style: none;
+    width: 370px;
+}
+
+.work-smarter-cards li {
+
+    padding-left: 20px;
+}
+
+.work-smarter a {
+    text-decoration: none;
+    border: 1px solid #0065FF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.work-smarter-cards p {
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.get-started {
+
+    background-color: #F4F5F7;
+    height: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-started h1 {
+    font-size: 180%;
+    font-family: inter;
+    font-weight: 500;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.get-started form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+
+.get-started div form input,
+button {
+
+    font-size: 15px;
+    height: 45px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.get-started input {
+    width: 100%;
+    margin-right: 10px;
+    border: 1px solid #2538584a;
+}
+
+.get-started form button {
+    width: 30%;
+    background-color: #0065FF;
+    border: none;
+    color: white;
+    font-size: 13px;
+}
+
+.get-started p {
+    font-size: 80%;
+}
+
+footer {
+
+    background-color: #172B4D;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    gap: 10px;
+
+}
+
+footer select {
+    background-color: #172B4D;
+    border: none;
+    color: white;
+    font-size: 15px;
+    margin-right: 50px;
+}
+
+
+.social-media img {
+    height: 70%;
+    margin-top: 8px;
+}
+
+.privacy {
+    align-items: center;
+    font-size: 13px;
+    gap: 30px;
+    margin-right: 500px;
+}
+
+footer img {
+    height: 60%;
+
+}

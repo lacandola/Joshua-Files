@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kanban.css">
+    <link rel="stylesheet" href=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/cupertino/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $("#sortable1, #sortable2, #sortable3, #sortable4, #sortable5").sortable({
+                    connectWith: ".connectedSortable"
+                }).disableSelection();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h1>KANBAN</h1>
+    <div>
+        <ul id="sortable1" class="connectedSortable">
+            <h2>To-do</h2>
+            <li class="ui-state-default">Item 1 <img
+                    src="https://i.insider.com/57910997dd0895a56e8b4593?width=600&format=jpeg&auto=webp" alt="icon1">
+            </li>
+            <li class="ui-state-default">Item 2 <img
+                    src="https://i0.wp.com/yumetwinsblog.wpcomstaging.com/wp-content/uploads/2021/12/4c9e1a01-76ac-4375-82ec-71aae24f79a4_900px-007Squirtle.png?resize=461%2C461&ssl=1"
+                    alt="icon2"></li>
+            <li class="ui-state-default">Item 3 <img
+                    src="https://www.giantbomb.com/a/uploads/scale_small/13/135472/1891758-001bulbasaur.png"
+                    alt="icon3"></li>
+        </ul>
+
+        <ul id="sortable2" class="connectedSortable">
+            <h2>In Progress</h2>
+            <li class="ui-state-default">Item 5 <img src="https://static.tvtropes.org/pmwiki/pub/images/grookey_5.png"
+                    alt="icon5"></li>
+        </ul>
+
+        <ul id="sortable3" class="connectedSortable">
+            <h2>For Approval</h2>
+            <li class="ui-state-default">Item 5 <img src="https://static.tvtropes.org/pmwiki/pub/images/grookey_5.png"
+                    alt="icon5"></li>
+            <li class="ui-state-default">Item 5 <img src="https://static.tvtropes.org/pmwiki/pub/images/grookey_5.png"
+                    alt="icon5"></li>
+        </ul>
+
+        <ul id="sortable4" class="connectedSortable">
+            <h2>Testing</h2>
+        </ul>
+
+        <ul id="sortable5" class="connectedSortable">
+            <h2>Done</h2>
+            <li class="ui-state-default">Item 4 <img
+                    src="https://www.giantbomb.com/a/uploads/scale_small/13/135472/1891761-004charmander.png"
+                    alt="icon4"></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

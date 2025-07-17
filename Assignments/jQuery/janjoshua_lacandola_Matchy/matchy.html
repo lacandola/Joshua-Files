@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matchy!</title>
+    <link rel="stylesheet" href="matchy.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('img').click(function () {
+                if ($(this).attr('src').includes('images/cover.png')) {
+                    $(this).attr('src', $(this).attr('data-alt-src'));
+                } else {
+                    $(this).attr('src', 'images/cover.png');
+                }
+            });
+            console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+        });
+        $('#reset-btn').click(function () {
+            $('img').attr('src', 'images/cover.png');
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="grid">
+        <img src="images/cover.png" data-alt-src="images/apple.png" alt="cover to apple">
+        <img src="images/cover.png" data-alt-src="images/banana.png" alt="cover to banana">
+        <img src="images/cover.png" data-alt-src="images/orange.png" alt="cover to orange">
+        <img src="images/cover.png" data-alt-src="images/pear.png" alt="cover to pear">
+        <img src="images/cover.png" data-alt-src="images/strawberry.png" alt="cover to strawberry">
+        <img src="images/cover.png" data-alt-src="images/watermelon.png" alt="cover to watermelon">
+        <img src="images/cover.png" data-alt-src="images/cherry.png" alt="cover to cherry">
+        <img src="images/cover.png" data-alt-src="images/dragonfruit.png" alt="cover to dragonfruit">
+        <img src="images/cover.png" data-alt-src="images/cherry.png" alt="cover to cherry">
+        <img src="images/cover.png" data-alt-src="images/dragonfruit.png" alt="cover to dragonfruit">
+        <img src="images/cover.png" data-alt-src="images/apple.png" alt="cover to apple">
+        <img src="images/cover.png" data-alt-src="images/banana.png" alt="cover to banana">
+        <img src="images/cover.png" data-alt-src="images/strawberry.png" alt="cover to strawberry">
+        <img src="images/cover.png" data-alt-src="images/watermelon.png" alt="cover to watermelon">
+        <img src="images/cover.png" data-alt-src="images/orange.png" alt="cover to orange">
+        <img src="images/cover.png" data-alt-src="images/pear.png" alt="cover to pear">
+    </div>
+    <button id="reset-btn">reset</button>
+</body>
+
+</html>

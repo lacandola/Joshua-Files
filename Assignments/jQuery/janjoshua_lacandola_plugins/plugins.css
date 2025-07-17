@@ -1,0 +1,22 @@
+body {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.701),rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        url('images/background.jpg');
+    height: 820px;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    filter: brightness(70%);
+}
+
+.mqscroller {
+    margin: 50px auto;
+    max-width: 100%;
+}
+
+.mqs-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}

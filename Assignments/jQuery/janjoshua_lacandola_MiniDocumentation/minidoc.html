@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Documentation</title>
+    <link rel="stylesheet" href="minidoc.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#click-btn").click(function () {
+                alert("You clicked the button");
+            });
+            $("#hide-btn").click(function () {
+                $("#hide-section p").eq(1).hide();
+            });
+            $("#show-section p:eq(1), #slide-down-section p:eq(1), #fade-in-section p:eq(1)").hide();
+            $("#show-btn").click(function () {
+                $("#show-section p").eq(1).show();
+            });
+            $("#toggle-btn").click(function () {
+                $("#toggle-section p").eq(1).toggle();
+            });
+            $("#slide-down-btn").click(function () {
+                $("#slide-down-section p").eq(1).slideDown();
+            });
+            $("#slide-up-btn").click(function () {
+                $("#slide-up-section p").eq(1).slideUp();
+            });
+            $("#slide-toggle-btn").click(function () {
+                $("#slide-toggle-section p").eq(1).slideToggle();
+            });
+            $("#fade-in-btn").click(function () {
+                $("#fade-in-section p").eq(1).fadeIn();
+            });
+            $("#fade-out-btn").click(function () {
+                $("#fade-out-section p").eq(1).fadeOut();
+            });
+            $("#add-class-btn").click(function () {
+                $("#add-class-section p").eq(1).addClass("add-style");
+            });
+            $("#before-btn").click(function () {
+                $("#before-section p").eq(1).before("Hey there! ");
+            });
+            $("#after-btn").click(function () {
+                $("#after-section p").eq(1).after("Hello again! ");
+            });
+            $("#append-btn").click(function () {
+                $("#append-section p").eq(1).append("The Best!");
+            });
+            $("#html-btn").click(function () {
+                $("#html-section p").eq(1).html("<i><b>Example: Click the button to add HTML tags to this sentence.</b></i>");
+            });
+            $("#attribute-btn").click(function () {
+                let elementID = $(this).attr("id"); $(this).after(elementID);
+            });
+            $("#val-btn").click(function () {
+                let value = $("#input").val(); alert("Your input is: " + value);
+            });
+            $("#text-btn").click(function () {
+                let content = $("#text-section p").eq(0).text(); alert("Description: " + content);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <nav class="links">
+        <ul>
+            <li><a href="#click-section">.click()</a></li>
+            <li><a href="#hide-section">.hide()</a></li>
+            <li><a href="#show-section">.show()</a></li>
+            <li><a href="#toggle-section">.toggle()</a></li>
+            <li><a href="#slide-down-section">.slideDown()</a></li>
+            <li><a href="#slide-up-section">.slideUp()</a></li>
+            <li><a href="#slide-toggle-section">.slideToggle()</a></li>
+            <li><a href="#fade-in-section">.fadeIn()</a></li>
+            <li><a href="#fade-out-section">.fadeOut()</a></li>
+            <li><a href="#add-class-section">.addClass()</a></li>
+            <li><a href="#before-section">.before()</a></li>
+            <li><a href="#after-section">.after()</a></li>
+            <li><a href="#append-section">.append()</a></li>
+            <li><a href="#html-section">.html()</a></li>
+            <li><a href="#attribute-section">.attr()</a></li>
+            <li> <a href="#val-section">.val()</a></li>
+            <li><a href="#text-section">.text()</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>My Mini Documentation</h1>
+
+        <section id="click-section">
+            <h2>Click</h2>
+            <button id="click-btn">.click()</button>
+            <p>Bind an event handler to the "click" event, or trigger that event on an element.</p>
+            <p>Example: Clicking the button will display alert box</p>
+        </section>
+
+        <section id="hide-section">
+            <h2>Hide</h2>
+            <button id="hide-btn">.hide()</button>
+            <p>Hide the matched elements.</p>
+            <p>Example: Click the button to hide this example sentence.</p>
+        </section>
+
+        <section id="show-section">
+            <h2>Show</h2>
+            <button id="show-btn">.show()</button>
+            <p>Display the matched elements.</p>
+            <p>Example: Clicking the button displayed this example sentence.</p>
+        </section>
+
+        <section id="toggle-section">
+            <h2>Toggle</h2>
+            <button id="toggle-btn">.toggle()</button>
+            <p>Display or hide the matched elements.</p>
+            <p>Example: Click the button to toggle this sentence.</p>
+        </section>
+
+        <section id="slide-down-section">
+            <h2>Slide Down</h2>
+            <button id="slide-down-btn">.slideDown()</button>
+            <p>Display the matched elements with a sliding motion.</p>
+            <p>Example: Click the button to show slide down.</p>
+        </section>
+
+        <section id="slide-up-section">
+            <h2>Slide Up</h2>
+            <button id="slide-up-btn">.slideUp()</button>
+            <p>Hide the matched elements with a sliding motion.</p>
+            <p>Example: Click the button to show slide up.</p>
+        </section>
+
+        <section id="slide-toggle-section">
+            <h2>Slide Toggle</h2>
+            <button id="slide-toggle-btn">.slideToggle()</button>
+            <p>Display or hide the matched elements with a sliding motion.</p>
+            <p>Example: Click the button to show slide toggle.</p>
+        </section>
+
+        <section id="fade-in-section">
+            <h2>Fade In</h2>
+            <button id="fade-in-btn">.fadeIn()</button>
+            <p>Display the matched elements by fading them to opaque.</p>
+            <p>Example: Click the button to show fade in.</p>
+        </section>
+
+        <section id="fade-out-section">
+            <h2>Fade Out</h2>
+            <button id="fade-out-btn">.fadeOut()</button>
+            <p>Hide the matched elements by fading them to transparent.</p>
+            <p>Example: Click the button to show fade out.</p>
+        </section>
+
+        <section id="add-class-section">
+            <h2>Add Class</h2>
+            <button id="add-class-btn">.addClass()</button>
+            <p>Adds the specified class(es) to each element in the set of matched elements.</p>
+            <p>Example: Click the button to add class to this sentence.</p>
+        </section>
+
+        <section id="before-section">
+            <h2>Before</h2>
+            <button id="before-btn">.before()</button>
+            <p>Insert content, specified by the parameter, before each element in the set of matched elements.</p>
+            <p>Example: Click the button to add something before this sentence.</p>
+        </section>
+
+        <section id="after-section">
+            <h2>After</h2>
+            <button id="after-btn">.after()</button>
+            <p>Insert content, specified by the parameter, after each element in the set of matched elements.</p>
+            <p>Example: Click the button to add something after this sentence.</p>
+        </section>
+
+        <section id="append-section">
+            <h2>Append</h2>
+            <button id="append-btn">.append()</button>
+            <p>Insert content, specified by the parameter, to the end of each element in the set of matched elements.
+            </p>
+            <p>Example: Armada Logics is </p>
+        </section>
+
+        <section id="html-section">
+            <h2>HTML</h2>
+            <button id="html-btn">.html()</button>
+            <p>Get the HTML contents of the first element in the set of matched elements.</p>
+            <p>Example: Click the button to add HTML tags to this sentence.</p>
+        </section>
+
+        <section id="attribute-section">
+            <h2>Attribute</h2>
+            <button id="attribute-btn">.attr()</button>
+            <p>Get the value of an attribute for the first element in the set of matched elements.</p>
+            <p>Example: Click the button to get the ID of the button.</p>
+        </section>
+
+        <section id="val-section">
+            <h2>Value</h2>
+            <button id="val-btn">.val()</button>
+            <p>Get the current value of the first element in the set of matched elements.</p>
+            <p>Example: Type something below then click the button to get value of input.</p>
+            <input type="text" id="input" placeholder="Type something">
+        </section>
+
+        <section id="text-section">
+            <h2>Text</h2>
+            <button id="text-btn">.text()</button>
+            <p>Get the combined text contents of each element in the set of matched elements, including their
+                descendants.</p>
+            <p>Example: Click the button to get the content of this section's description.</p>
+        </section>
+
+    </main>
+
+
+
+</body>
+
+</html>

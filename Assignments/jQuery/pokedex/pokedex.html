@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="pokedex.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/start/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            for (let i = 1; i <= 5; i++) {  // Load first 50 Pokémon
+                $.ajax({
+                    url: `https://pokeapi.co/api/v2/pokemon/${i}`, // Pikachu
+                    method: 'GET',
+                    success: function (data) {
+                        const imgURL = data.sprites.other['official-artwork'].front_default;
+                        $('#pokedex').append(`
+      <div class="pokemon-card">
+        <img src="${imgURL}" width="500" />
+        <h4>${data.name}</h4>
+      </div>
+    `);
+                    }
+                });
+            }
+
+            let allNames = [];
+
+            // Fetch all Pokémon names (first 1000 for speed)
+            $.get('https://pokeapi.co/api/v2/pokemon?limit=1000', function (data) {
+                allNames = data.results.map(p => p.name);
+                $("#search").autocomplete({
+                    source: allNames,
+                    select: function (event, ui) {
+                        const name = ui.item.value.toLowerCase();
+                        loadPokemon(name);
+                    }
+                });
+            });
+
+            function loadPokemon(name) {
+                $('#pokedex').empty(); // clear previous
+
+                $.get(`https://pokeapi.co/api/v2/pokemon/${name}`, function (pokemon) {
+                    const img = pokemon.sprites.other['official-artwork'].front_default;
+                    const types = pokemon.types.map(t => t.type.name).join(', ');
+                    const id = pokemon.id;
+                    const displayName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+
+                    $.get(`https://pokeapi.co/api/v2/pokemon-species/${id}`, function (species) {
+                        const entry = species.flavor_text_entries.find(e => e.language.name === 'en');
+                        const description = entry ? entry.flavor_text.replace(/\f|\n/g, ' ') : 'No description available.';
+
+                        const card = `
+                <div class="pokemon-card">
+                    <img src="${img}" alt="${displayName}" />
+                    <h3>#${id} ${displayName}</h3>
+                    <p><strong>Type:</strong> ${types}</p>
+                    <p><strong>Description:</strong> ${description}</p>
+                </div>
+              `;
+                        $('#pokedex').append(card);
+                    });
+                });
+            }
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <input id="search" placeholder="Search Pokémon..." style="padding: 8px; font-size: 16px; width: 250px;">
+
+    <h1>Mini Pokédex</h1>
+    <div id="pokedex"></div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif;
+    background: #f2f2f2;
+    padding: 20px;
+    justify-items: center;
+    background-image: url(https://wallpapercat.com/w/full/5/f/3/2120472-3840x2160-desktop-4k-pokemon-background-image.jpg);
+    background-size: cover;
+}
+  #pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .pokemon-card {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .pokemon-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+  .pokemon-card h3 {
+    margin: 10px 0 5px;
+  }
+  .pokemon-card p {
+    margin: 4px 0;
+  }
